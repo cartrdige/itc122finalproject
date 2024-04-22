@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		}
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+		}
+	.whiteboard {
+		margin-bottom: 10px;
+		}
+	.thoughts {
+		margin-bottom: 20px;
+		}
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+		}
+		
+/* start of navigation bar css */
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		position: sticky;
+		top: 0;
+		}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;	
+	}
+	li {
+	}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+	li:last-child a {
+		border-right: none;
+	}
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+/* end of navigation bar css */	
+
+/* start of search bar css */
+	
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+
+/* end of search bar css */	
+	
+/* end of navigation bar css */
+
+/* start of the slideshow css */
+
+	.container {
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 2rem;
+	}
+
+	.slider-wrapper {
+		max-width: 48rem;
+	}
+
+	.slider {
+		display: flex;
+		flex-direction: column;
+		aspect-ratio: 1/1;
+		overflow: auto;
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0.25);
+		border-radius: 0.5rem;
+	}
+
+	.slider img {
+		flex: 1 0 100%;
+		scroll-snap-align: start;
+		object-fit: cover;
+	}
+
+	.slider-nav {
+		margin-top: -29rem;
+		margin-left: -21rem;
+		display: flex;
+		row-gap: 1rem;
+	}
+
+	.slider-nav a {
+		width: 1rem;
+		height: 1rem;
+		margin: 1rem;
+		border-radius: 100%;
+		background-color: #787A76;
+		opacity: 0.75;
+		transition: opacity ease 250ms;
+	}
+
+	.slider-nav a:hover {
+		opacity: 1;
+	}
+
+/* end of the slideshow css */
+
+/* start of the course navigation css */
+
+	.current {
+		flex: 1;
+		margin-left: 16rem;
+		margin-right: 2rem;
+		margin-top: -7rem;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		font-size: 20px;
+		color: black;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current h2 {
+		color: #616161;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+		outline: double;
+		
+	}
+
+	.current ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current li {
+		margin-bottom: 1rem;
+		outline: outset 1px;
+	}
+	
+	.current li a {
+		color: #424242;
+		border-right: 1px solid black;
+		}
+
+	.current a {
+		text-decoration: none;
+		color: black;
+		transition: color 0.3s;
+	}
+
+	.current a:hover {
+		color: white;
+	}
+	
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+
+/* end of the course navigation css */
+
+
+</style>
+</head>
+
+<body>
+
+<div class=header>
+	<div class=whiteboard>Whiteboard<div> 
+	<div class=thoughts>Thoughts</div>
+	<div class=tag>"Write, Edit, Upload, and Save"</div>
+	<div class=tag2>A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+	  <li><a href="home.html" style="border-left: 1px solid black" >Home</a></li>
+	  <li><a class="active" href="university.html">University</a></li>
+	  <li><a href="life.html">Life</a></li>
+	  <li><a href="career.html">Career</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="contact.html">Contact</a><li>
+	  
+	  <li>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </li>
+	  
+	</ul>
+</nav>
+
+<section class="container">
+		<div class="slider wrapper">
+			<div class="slider">
+				<img id="slide-1" src="https://i.pinimg.com/originals/fe/9a/60/fe9a604b6777015f43f02374e7bc2801.gif" alt="aesthetics1" />
+				<img id="slide-2" src="https://img.wattpad.com/237957af0b0aa0adc39852d506bbadf67b00949c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f30313949487465764d7a5a4b6e513d3d2d3939323035303032352e313634653531356564313030376564633436363638363738343837302e676966" alt="aesthetics2" />
+				<img id="slide-3" src="https://i.pinimg.com/originals/5f/dd/09/5fdd094c2e320323bee032f362a65f08.gif" alt="aesthetics3" />			
+				
+			</div>
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+		</div>		
+
+		<div class="current">
+		<h2>Current Semester Courses</h2>
+		<ul>
+			<li><a href="act1.html">HTML Activity 1-9</a></li>
+			<li><a href="act2.html">HTML Activity 10-41</a></li>
+			<li><a href="act3.html">CSS Activity 1-22</a></li>
+			<li><a href="act4.html">CSS Activity 23-50</a></li>
+			<li><a href="act5.html">CSS Activity 51-68</a></li>
+		</ul>
+	</div>
+</section>
+
+</body>

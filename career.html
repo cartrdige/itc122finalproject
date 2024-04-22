@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		}
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+		}
+	.whiteboard {
+		margin-bottom: 10px;
+		}
+	.thoughts {
+		margin-bottom: 20px;
+		}
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+		}
+		
+/* start of navigation bar css */
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	li {
+	}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+	li:last-child a {
+		border-right: none;
+	}
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+/* end of navigation bar css */
+
+	.about-header {
+		text-align: center;
+		font-size: 28px;
+		font-family: "Baskerville Old Face", Bahnschrift;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		letter-spacing: 2rem;
+		margin-top: 50px;
+		padding: 20px;
+		text-align: center;
+		color: #787A76;
+		}
+	
+	.about-subheader {
+		text-align: center;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		padding: 20px;
+		text-align: center;
+		color: #787A76;
+		}
+/* start of the slideshow css */
+
+.current {
+    flex: 1;
+    font-family: "Bahnschrift Light", Bahnschrift;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    order: 1; /* Change the order to make it appear on the left side */
+    margin-right: auto; /* Pushes the courses to the left */
+}
+
+/* end of the slideshow css */
+
+/* start of the course navigation css */
+
+	.current {
+		flex: 1;
+		margin-left: 16rem;
+		margin-right: 2rem;
+		margin-top: 1rem;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		font-size: 20px;
+		color: black;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current h2 {
+		color: #616161;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+		outline: double;
+		
+	}
+
+	.current ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.current li {
+		margin-bottom: 1rem;
+		outline: outset 1px;
+	}
+	
+	.current li a {
+		color: #424242;
+		border-right: 1px solid black;
+		}
+
+	.current a {
+		text-decoration: none;
+		color: black;
+		transition: color 0.3s;
+	}
+
+	.current a:hover {
+		color: white;
+	}
+	
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+/* end of the slideshow css */
+	
+
+</style>
+</head>
+
+<body>
+
+<div class=header>
+	<div class=whiteboard>Whiteboard<div> 
+	<div class=thoughts>Thoughts</div>
+	<div class=tag>"Write, Edit, Upload, and Save"</div>
+	<div class=tag2>A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+	  <li><a href="home.html" style="border-left: 1px solid black">Home</a></li>
+	  <li><a href="university.html">University</a></li>
+	  <li><a href="life.html">Life</a></li>
+	  <li><a class="active" href="career.html">Career</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="contact.html">Contact</a><li>
+	  
+	  <li>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </li>
+	  
+	</ul>
+</nav>
+
+<div class="about-header">CAREER</div>
+<div class="about-subheader">Starting my first job was like stepping into a new world, filled with excitement, nerves, and the thrill of the unknown. As I reflect on those early days, I realize how much I've grown since then. Initially, every task felt daunting, every challenge seemed insurmountable. However, with each passing day, I found my footing, gaining confidence and proficiency in my role. The supportive colleagues who guided me through the learning curve became more than just coworkers; they became mentors and friends. Through successes and setbacks, I discovered my strengths and areas for improvement, shaping not just my professional skills but also my character. Looking back, I cherish the lessons learned during those formative months, grateful for the experiences that paved the way for my journey ahead.</div>
+
+<section class="container">
+	<div class="slider wrapper">
+		<div class="slider">
+			<img id="slide-1" src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/434336545_709836398031285_65154300562085588_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=B1gWj6ehUMMAX_vpVhR&_nc_ht=scontent.fmnl4-4.fna&oh=03_AdT6lh3wAah833d-9m2Mmq5bfeXm92tYMeuSjP06DhSKRA&oe=662D4F99" alt="aesthetics1" style="width: 400px; height: 300px;" />
+			<img id="slide-2" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.15752-9/434259527_941605470609357_3622474564286478139_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=FiCKYEABANsAX-_G_fJ&_nc_ht=scontent.fmnl4-3.fna&oh=03_AdSH9R355chIgDLZ8rKTlTy3FwIngVdaoRCwgQ-jlU26Ew&oe=662D2FAA" alt="aesthetics2" style="width: 400px; height: 300px;" />
+			<img id="slide-3" src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.15752-9/434362213_449628757418008_277470194761536742_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Atfktaq-qTwAX951iCv&_nc_ht=scontent.fmnl4-1.fna&oh=03_AdRnUKRvXKURoyRaQZxZrqrtvWalH75HoIv-7XU8K-Sssg&oe=662D4232" alt="aesthetics3" style="width: 400px; height: 300px;" />
+		</div>
+	</div>
+
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+		</div>		
+			
+</section>
+
+</body>

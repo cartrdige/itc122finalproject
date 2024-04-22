@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		}
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+		}
+	.whiteboard {
+		margin-bottom: 10px;
+		}
+	.thoughts {
+		margin-bottom: 20px;
+		}
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+		}
+		
+/* start of navigation bar css */
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		position: sticky;
+		top: 0;
+		}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;	
+	}
+	li {
+	}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+	li:last-child a {
+		border-right: none;
+	}
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+/* end of navigation bar css */	
+
+/* start of search bar css */
+	
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+
+/* end of search bar css */	
+	
+/* end of navigation bar css */
+
+/* start of the slideshow css */
+
+	.container {
+		padding: 2rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 2rem;
+	}
+
+	.slider-wrapper {
+		max-width: 48rem;
+	}
+
+	.slider {
+		display: flex;
+		flex-direction: column;
+		aspect-ratio: 1/1;
+		overflow: auto;
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0.25);
+		border-radius: 0.5rem;
+	}
+
+	.slider img {
+		flex: 1 0 100%;
+		scroll-snap-align: start;
+		object-fit: cover;
+	}
+
+	.slider-nav {
+		margin-top: -29rem;
+		margin-left: -21rem;
+		display: flex;
+		row-gap: 1rem;
+	}
+
+	.slider-nav a {
+		width: 1rem;
+		height: 1rem;
+		margin: 1rem;
+		border-radius: 100%;
+		background-color: #787A76;
+		opacity: 0.75;
+		transition: opacity ease 250ms;
+	}
+
+	.slider-nav a:hover {
+		opacity: 1;
+	}
+
+/* end of the slideshow css */
+
+/* start of the course navigation css */
+
+/* start of life css */
+	.Everyday {
+		flex: 1;
+		margin-left: 16rem;
+		margin-right: 2rem;
+		margin-top: -12rem;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		font-size: 28px;
+		color: black;
+		display: flex;
+		flex-direction: column;
+		border: double;
+		}
+
+	.Everyday h2 {
+		color: #616161;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+		outline: double;
+		}
+
+	.Everyday form {
+		margin-bottom: 1rem;
+		margin-left: 8rem;
+		text-align: left;
+		}
+
+	.Everyday label {
+		color: #424242;
+		}
+	
+	.Everyday select {
+		padding: 14px 16px;
+		border-radius: 0px;
+		border: 1px solid #ccc;
+		margin-right: 10px;
+		}
+
+	.Everyday button[type=submit] {
+		background-color: #787A76;
+		color: white;
+		padding: 14px 16px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		}
+
+	.Everyday button[type=submit]:hover {
+		background-color: #232323;
+		color: white;
+		}
+
+	.Everyday a {
+		text-decoration: none;
+		color: black;
+		transition: color 0.3s;
+		}
+
+	.Everyday a:hover {
+		color: white;
+		}
+
+/* end of life css */
+
+/* end of the course navigation css */
+
+
+</style>
+</head>
+
+<body>
+
+<div class=header>
+	<div class=whiteboard>Whiteboard<div> 
+	<div class=thoughts>Thoughts</div>
+	<div class=tag>"Write, Edit, Upload, and Save"</div>
+	<div class=tag2>A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+	  <li><a href="home.html" style="border-left: 1px solid black" >Home</a></li>
+	  <li><a href="university.html">University</a></li>
+	  <li><a class="active" href="life.html">Life</a></li>
+	  <li><a href="career.html">Career</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="contact.html">Contact</a><li>
+	  
+	  <li>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </li>
+	  
+	</ul>
+</nav>
+
+<section class="container">
+		<div class="slider wrapper">
+			<div class="slider">
+				<img id="slide-1" src="https://i.pinimg.com/originals/4d/0e/9c/4d0e9cedc268d0f03b7954d8a8da6368.gif" alt="aesthetics1" />
+				<img id="slide-2" src="https://i.pinimg.com/originals/f9/e2/87/f9e2871cd826fd5287f47ee3407fd5b9.gif" alt="aesthetics2" />
+				<img id="slide-3" src="https://24.media.tumblr.com/4aaee6b1a42a8df0a8e3862dfa782cbb/tumblr_ms40q2W5kV1qh0pnto1_500.gif" alt="aesthetics3" />			
+				
+			</div>
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+		</div>		
+
+	<div class="Everyday">
+		<h2>Everyday Life Things</h2>
+		<form id="hobby-select">
+			<label for="hobbies">Hobbies:</label>
+			<select id="hobbies" name="hobbies">
+				<option value="anime">Anime</option>
+				<option value="manga">Manga</option>
+				<option value="manhwa">Manhwa</option>
+				<option value="manhua">Manhua</option>
+				<option value="webtoon" selected>Drawing</option>
+				<option value="games">Games</option>
+			</select>
+			<button type="submit">Go</button>
+		</form>
+		<form id="sports-select">
+			<label for="sports">Sports:</label>
+			<select id="sports" name="sports">
+				<option value="vb">Volleyball</option>
+				<option value="badminton">Badminton</option>
+				<option value="archery">Archery</option>
+			</select>
+			<button type="submit">Go</button>
+		</form>
+		<form id="food-select">
+			<label for="food">Food:</label>
+			<select id="food" name="food">
+				<option value="desert">Desert</option>
+				<option value="drinks">Drinks</option>
+				<option value="fruits">Fruits</option>
+				<option value="vegetable">Vegetable</option>
+				<option value="dish" selected>Dish</option>
+				<option value="junkfood">Junk Food</option>
+			</select>
+			<button type="submit">Go</button>
+		</form>
+		<form id="goals-select">
+			<label for="goals">Goals:</label>
+			<select id="Goals" name="Goals">
+				<option value="desert">Exercise</option>
+				<option value="drinks">Finance</option>
+				<option value="fruits">Material Things</option>
+			</select>
+			<button type="submit">Go</button>
+		</form>		
+	</div>
+
+
+</section>
+
+</body> 
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.whiteboard {
+		margin-bottom: 0px;
+	}
+
+	.thoughts {
+		margin-bottom: 20px;
+	}
+
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-right: -20px;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	li {
+	}
+
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+
+	li:last-child a {
+		border-right: none;
+	}
+
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20px;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+
+	.about-header {
+		text-align: center;
+		font-size: 28px;
+		font-family: "Baskerville Old Face", Bahnschrift;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		letter-spacing: 2rem;
+		margin-top: 50px;
+		padding: 20px;
+		text-align: center;
+		color: #787A76;
+		}
+
+	.about-section {
+		display: flex;
+		align-items: center;
+		}
+
+	.about-content {
+		flex: 1;
+		}
+
+	.about-content p {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		border: double;
+		margin: 10px 50px 50px 50px;
+		height: 260px;
+		padding: 20px;
+		text-align: center;
+		color: #454444;
+		}
+
+	.about-image {
+		margin-left: 20px;
+		}
+
+	.about-image img {
+		max-width: 100%;
+		height: auto;
+		}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+	<div class="whiteboard">Whiteboard</div> 
+	<div class="thoughts">Thoughts</div>
+	<div class="tag">"Write, Edit, Upload, and Save"</div>
+	<div class="tag2">A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="home.html" style="border-left: 1px solid black">Home</a></li>
+		<li><a href="university.html">University</a></li>
+		<li><a href="life.html">Life</a></li>
+		<li><a href="career.html">Career</a></li>
+		<li><a class="active" href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a><li>
+		<li>
+			<div class="search-container">
+				<form action="/search" method="get">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+<div class="about-header">ABOUT</div>
+
+<div class="about-section">
+    <div class="about-content">
+        <p>
+Creating a webpage to showcase my school works has been an exhilarating journey of self-discovery and accomplishment. From essays to art projects, each piece represents a part of my academic and creative journey. As I curated the content for the page, I found myself reflecting on the hours spent researching, the moments of inspiration, and the challenges overcome. It's not just about displaying my achievements but also about celebrating the process behind each piece. Through this platform, I aim to share not only my work but also the passion and dedication that drive me. Moreover, it serves as a testament to my growth and development throughout my academic career. As I continue to update and refine the page, I'm excited to see how it evolves alongside my journey of learning and exploration.
+</p>
+    </div>
+    <div class="about-image">
+        <img src="https://i.pinimg.com/originals/1e/a3/92/1ea392407f7b8aa5ab94ac520e3afeab.gif">
+    </div>
+</div>
+
+</body>
+</html>

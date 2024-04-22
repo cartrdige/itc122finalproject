@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	/* Header Styles */
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.whiteboard {
+		margin-bottom: 0px;
+	}
+
+	.thoughts {
+		margin-bottom: 20px;
+	}
+
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+	}
+
+	/* Navigation Bar Styles */
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	li {
+	}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+	li:last-child a {
+		border-right: none;
+	}
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+
+	/* About Section Styles */
+	.about-header {
+		text-align: center;
+		font-size: 28px;
+		font-family: "Baskerville Old Face", Bahnschrift;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		letter-spacing: 2rem;
+		margin-top: 50px;
+		padding: 20px;
+		color: #787A76;
+	}
+
+	.about-subheader {
+		text-align: center;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		padding: 0px 50px 20px 20px;
+		color: #787A76;
+	}
+
+	/* Form Styles */
+	.container {
+		border-radius: 5px;
+		background-color: #CDCDCD;
+		padding: 20px;
+		width: 1200px;
+		margin: -30px 10px 25px 25px;
+		
+	}
+	
+	.form-header {
+		font-size: 30px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		color: #454444;
+		}
+
+	.container label {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.container input[type=text], 
+	.container select {
+		width: calc(100% - 32px);
+		padding: 14px 16px;
+		margin: 8px 0;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.container textarea {
+		width: calc(100% - 32px);
+		height: 150px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+		font-size: 16px;
+		resize: none;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.container input[type=submit] {
+		width: calc(100% - 32px);
+		background-color: #787A76;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-family: "Bahnschrift Light", Bahnschrift;
+	}
+
+	.container input[type=submit]:hover {
+		background-color: #232323;
+	}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	<div class="whiteboard">Whiteboard</div> 
+	<div class="thoughts">Thoughts</div>
+	<div class="tag">"Write, Edit, Upload, and Save"</div>
+	<div class="tag2">A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="home.html" style="border-left: 1px solid black">Home</a></li>
+		<li><a href="university.html">University</a></li>
+		<li><a href="life.html">Life</a></li>
+		<li><a href="career.html">Career</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a class="active" href="contact.html">Contact</a></li>
+		<li>
+			<div class="search-container">
+				<form action="/search" method="get">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+<div class="about-header">CONTACT</div>
+<div class="about-subheader"><br>Email: mishijavier10@gmail.com </br>
+<br>Phone Number: 09672212529</br>
+<br>Facebook: Mishi Aringay</br>
+<br>Messenger: Mishi Aringay</br>
+<br>Instagram: mishi_aringay</br></div>
+
+<div class="container">
+	<div class="form-header">Please put your comment here</div>
+	<form action="/action_page.php">
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="country">Country</label>
+		<select id="country" name="country">
+			<option value="australia">Australia</option>
+			<option value="canada">Canada</option>
+			<option value="usa">USA</option>
+		</select>
+		<label for="message">Message</label>
+		<textarea id="message" name="message" placeholder="Write something.."></textarea>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+</body>
+</html>

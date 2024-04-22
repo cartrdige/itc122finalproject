@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Thoughts</title>
+<style>
+	body {
+		font-size: 28px;
+		background-image: url(https://i.pinimg.com/originals/69/e2/7c/69e27c177766a3cb153b37682b22186c.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		}
+	.header {
+		font-size: 116px;
+		font-family: "Baskerville Old Face", Bahnschrift, sans-serif;
+		text-align: center;
+		margin-top: 40px;
+		}
+	.whiteboard {
+		margin-bottom: 10px;
+		}
+	.thoughts {
+		margin-bottom: 20px;
+		}
+	.tag {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	.tag2 {
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		margin-bottom: 40px;
+		}
+		
+/* start of navigation bar css */
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		background-color: white; 
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 20px;
+		font-family: "Bahnschrift Light", Bahnschrift;
+		}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	li {
+	}
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-right: 1px solid black;
+	}
+	li:last-child a {
+		border-right: none;
+	}
+	li a:hover {
+		background-color: #787A76;
+		color: white;
+	}
+	.active {
+		background-color: #787A76;
+		color: white;
+	}
+	.search-container {
+        display: flex;
+        align-items: center;
+		margin-top: 4px;
+        margin-left: 20px;
+		margin-right: 20;
+    }
+
+    .search-container input[type=text] {
+        padding: 14px 16px;
+        border-radius: 0px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+    }
+
+    .search-container button[type=submit] {
+        background-color: #787A76;
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button[type=submit]:hover {
+        background-color: #232323;
+		color: white;
+    }
+/* end of navigation bar css */
+
+/* start of the slideshow css */
+
+	.container {
+		padding: 2rem 20rem;
+		}
+		
+	.slider-wrapper {
+		position: relative;
+		max-width: 48rem;
+		margin: 0 auto;
+		}
+
+	.slider {
+		display: flex;
+		aspect-ratio: 16/9;
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0.25);
+		border-radius: 0.5rem;
+		}
+
+	.slider img {
+		flex: 1 0 100%;
+		scroll-snap-align: start;
+		object-fit: cover;
+		}
+
+	.slider-nav {
+		display: flex;
+		column-gap: 1rem;
+		position: absolute;
+		bottom: -10rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		}
+
+	.slider-nav a {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 100%;
+		background-color: #fff;
+		opacity: 0.75;
+		transition: opacity ease 250ms;
+		}
+
+	.slider-nav a:hover {
+		opacity: 1;
+		}
+/* end of the slideshow css */
+	
+
+</style>
+</head>
+
+<body>
+
+<div class=header>
+	<div class=whiteboard>Whiteboard<div> 
+	<div class=thoughts>Thoughts</div>
+	<div class=tag>"Write, Edit, Upload, and Save"</div>
+	<div class=tag2>A Collection of Mine</div>
+</div>
+
+<nav>
+	<ul>
+	  <li><a class="active" href="home.html">Home</a></li>
+	  <li><a href="university.html">University</a></li>
+	  <li><a href="life.html">Life</a></li>
+	  <li><a href="career.html">Career</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="contact.html">Contact</a><li>
+	  
+	  <li>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </li>
+	  
+	</ul>
+</nav>
+
+
+<section class="container">
+		<div class="slider wrapper">
+			<div class="slider">
+				<img id="slide-1" src="https://i.pinimg.com/originals/c8/4a/0e/c84a0ee72a1990cdebe93daa515b8833.gif" alt="aesthetics1" />
+				<img id="slide-2" src="https://i.pinimg.com/originals/b7/a3/b1/b7a3b1b0fcf4d741a4f5e0f31da01d34.gif" alt="aesthetics2" />
+				<img id="slide-3" src="https://i.pinimg.com/originals/6d/38/16/6d381679f080b1bae5977f1a27294af2.gif" alt="aesthetics3" />			
+				
+			</div>
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+		</div>		
+			
+</section>
+
+</body>
